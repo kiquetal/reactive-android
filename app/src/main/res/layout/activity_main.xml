@@ -10,21 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/activity_main">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/hello_world_salute"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/stock_updates_recyclerview"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/hello_world_salute">
-
+        android:layout_height="match_parent">
     </android.support.v7.widget.RecyclerView>
 </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

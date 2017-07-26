@@ -12,8 +12,7 @@ import io.reactivex.Observable;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.hello_world_salute)
-    TextView helloText;
+
     @BindView(R.id.stock_updates_recyclerview)
     RecyclerView recyclerView;
 
@@ -37,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(stockDataAdapter);
         Observable.just("APPL", "GOOGLE", "TWTR")
                 .subscribe(s-> {
-                        stockDataAdapter.add(s);
+        stockDataAdapter.add(s);
 
-                });
+    });
     }
 }
