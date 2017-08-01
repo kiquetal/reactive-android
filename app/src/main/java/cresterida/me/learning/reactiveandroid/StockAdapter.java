@@ -1,6 +1,7 @@
 package cresterida.me.learning.reactiveandroid;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +35,7 @@ public class StockAdapter extends RecyclerView.Adapter<StockViewAdapterViewHolde
     @Override
     public void onBindViewHolder(StockViewAdapterViewHolder holder, int position) {
 
+        Log.i(this.getClass().getName(),"esto");
         holder.textView.setText(data.get(position));
     }
 
