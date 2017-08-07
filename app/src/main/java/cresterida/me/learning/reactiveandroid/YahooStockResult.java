@@ -1,7 +1,5 @@
 package cresterida.me.learning.reactiveandroid;
-
 import com.google.gson.annotations.SerializedName;
-
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -48,19 +46,15 @@ class YahooQuote
     private BigDecimal lastTradePriceOnly;
     @SerializedName("DaysLow")
     private BigDecimal daysLow;
-
     public String getSymbol() {
         return symbol;
     }
-
     public String getName() {
         return name;
     }
-
     public BigDecimal getLastTradePriceOnly() {
         return lastTradePriceOnly;
     }
-
     public BigDecimal getDaysLow() {
         return daysLow;
     }
